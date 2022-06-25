@@ -1,6 +1,6 @@
 const convertTimeInMilliseconds = require("./index")
 
-describe("convertTimeInMilliseconds", () => {
+describe("convertTimeinMilliseconds", () => {
   it("should converte hour, minutes, and seconds to milliseconds", () => {
     expect(convertTimeInMilliseconds(0,1,1)).toBe(61000)
     expect(convertTimeInMilliseconds(1,1,1)).toBe(3661000)
