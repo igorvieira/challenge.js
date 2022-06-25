@@ -4,10 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha **/*.js"
+    "test": "jest"
   },
   "dependencies": {
-    "chai": "^4.3.6",
-    "mocha": "^10.0.0"
+    "jest": "^28.1.1"
   }
 }

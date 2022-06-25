@@ -1,21 +1,18 @@
-const chai = require("chai");
-const assert = chai.assert;
 const formSentence = require("./index")
-chai.config.truncateThreshold=0;
 
 describe("formSentence", () =>  {
 
   it ("should return empty string for empty array.", () => {
-    assert.strictEqual(formSentence([]), "");
+   expect(formSentence([])).toBe("");
   });
 
   it ("should return a unique word.", () => {
-    assert.strictEqual(formSentence(["hello"]), "hello");
+   expect(formSentence(["hello"])).toBe("hello");
   });
 
   it ("should return multiple sentences", () =>  {
-    assert.strictEqual(formSentence(["hello", "world"]), "hello world");
-    assert.strictEqual(formSentence(["hello", "amazing", "world"]), "hello amazing world");
-    assert.strictEqual(formSentence(["this", "is", "a", "really", "long", "sentence"]), "this is a really long sentence");
+   expect(formSentence(["hello", "world"])).toBe("hello world");
+   expect(formSentence(["hello", "amazing", "world"])).toBe("hello amazing world");
+   expect(formSentence(["this", "is", "a", "really", "long", "sentence"])).toBe("this is a really long sentence");
   });
 });
